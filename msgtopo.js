@@ -1,9 +1,6 @@
 // timer para o timeout do javascript
 var msgTopoTimer = '';
 
-// tempo padrão para msgTopo
-var tempoPadrao = 5000;
-
 // função simples para exibir resposta de erro ou confirmação
 var msgTopo = function( txt, classe, tempo )
 {
@@ -52,4 +49,3 @@ var escondeMsgTopo = function()
     clearTimeout( msgTopoTimer );
     $('#msg-topo').fadeOut( 'fast' );
 };
-
