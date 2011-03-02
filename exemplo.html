@@ -18,8 +18,15 @@
 
     <script>
       $(function(){
-          msgTopo( 'Mensagem de erro', 'erro', 4000 );
-      });
+				msgTopo('Mensagem de erro', 'erro');
+				setTimeout(function(){
+					msgTopo('Mensagem OK', 'sucesso', 5);
+				}, 5000);
+ 				setTimeout(function(){
+					msgTopo('Mensagem OK', '', 5);
+				}, 11000);
+
+			});
     </script>
 
     </body>
